@@ -1,0 +1,60 @@
+<div *ngIf="loading">
+  <h1>Cargando</h1>
+</div>
+<div *ngIf="!loading">
+  <div class="list-group" >
+
+    <li class="list-group-item list-group-item-action">
+      <h1>List</h1>
+  <a href="#" class=" active" *ngFor="let plan of planes">
+
+    {{plan['id']}}
+    {{plan['nombrePlan']}}
+    <br>
+  </a>
+</li>
+</div>
+
+<hr>
+<div class="list-group" >
+
+  <li class="list-group-item list-group-item-action">
+    <h1>Any</h1>
+<a href="#" class=" active" *ngFor="let planesAny of planesAny">
+
+  {{planesAny['id']}}
+  {{planesAny['nombrePlan']}}
+  <br>
+</a>
+</li>
+</div>
+
+<hr>
+<div class="list-group" >
+
+  <li class="list-group-item list-group-item-action">
+    <h1>Heroku</h1>
+<a href="#" class=" active" *ngFor="let planesHeroku of planesHeroku">
+
+  {{planesHeroku['id']}}
+  {{planesHeroku['nombrePlan']}}
+  <br>
+</a>
+</li>
+</div>
+
+<hr>
+<div class="list-group" >
+
+  <li class="list-group-item list-group-item-action">
+    <h1>Heroku</h1>
+<a href="#" class=" active" *ngFor="let planesAnyHeroku of planesAnyHeroku">
+
+  {{planesAnyHeroku['id']}}
+  {{planesAnyHeroku['nombrePlan']}}
+  <br>
+</a>
+</li>
+</div>
+
+</div>
